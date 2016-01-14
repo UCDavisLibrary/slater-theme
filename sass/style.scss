@@ -122,16 +122,21 @@ $color__ucd-gold--10: #F9F4E5;
 $color__body-text: #000000;
 $color__link: $color__ucd-blue;
 
+// 2.2 font stacks
+$serif-body: WorcesterSerial-Medium, Georgia, serif;
+$serif-header: WorcesterSerial, Georgia, serif;
+$sans-serif: Helvetica, sans-serif;
+
 // 3.0 typography
 // -----------------------------------------------------------------------------
 // all typographic rules, including colors, text-transforms, and bottom margins
 // -----------------------------------------------------------------------------
 body { 
-	font-family: WorcesterSerial-Medium;
+	font-family: $serif-body;
 }
 
 h1 {
-	font-family: WorcesterSerial;
+	font-family: $serif-header;
 	font-size: 2.2em;
 	line-height: 1.2em;
 	color: $color__ucd-blue;
@@ -139,7 +144,7 @@ h1 {
 }
 
 h2 {
-	font-family: WorcesterSerial;
+	font-family: $serif-header;
 	font-size: 1.8em;
 	line-height: 1.2em;
 	color: $color__ucd-blue;
@@ -147,7 +152,7 @@ h2 {
 }
 
 h3 {
-	font-family: WorcesterSerial;
+	font-family: $serif-header;
 	font-size: 1.3em;
 	line-height: 1.4em;
 	margin-bottom: 1em;
@@ -165,7 +170,7 @@ em {
 }
 
 blockquote {
-	font-family: WorcesterSerial;
+	font-family: $serif-header;
 	font-size: 1.3em;
 	line-height: 1.4em;
 	color: $color__ucd-blue;
@@ -185,6 +190,11 @@ blockquote {
 	margin: 5em;
 }
 
+.menu-navigation-container {
+	font-family: $sans-serif;
+	font-size: .8em;
+}
+
 
 
 // 4.0 layout
@@ -194,7 +204,15 @@ blockquote {
 // -----------------------------------------------------------------------------
 
 .menu-navigation-container {
-ul { list-style: none;}
+	ul { 
+		list-style: none;
+		display: flex;
+		justify-content: center;
+		li {
+			text-transform: uppercase;
+			padding: 1em;
+		}
+	}
 }
 
 .post {
@@ -209,7 +227,7 @@ ul { list-style: none;}
 // -----------------------------------------------------------------------------
 
 #header {
-	background: url('/wp-content/themes/slater-theme/images/header.png');
+	background: url('/wp-content/themes/slater-theme/images/header.png') cover;
 }
 
 // 6.0 general
