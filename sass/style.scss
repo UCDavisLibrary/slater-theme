@@ -1,0 +1,312 @@
+/*   
+Theme Name: Slater Archive Theme
+Author: Pablo Defendini for UC Davis
+Author URI: http://defendini.com
+Version: 1
+*/
+
+// -----------------------------------------------------------------------------
+// Table of contents
+// --------------------------------------
+// 0.0 reset 
+// 1.0 imports
+// 2.0 variables
+// 3.0 typography
+// 4.0 layout
+// 5.0 imagery
+// 6.0 general
+// 7.0 animation
+// 8.0 modules
+// 9.0 print
+// ----------------------------------------------------------------------------
+
+// 0.0 reset
+// -----------------------------------------------------------------------------
+// based on Eric Myer's CSS Reset: http://meyerweb.com/eric/tools/css/reset/
+// -----------------------------------------------------------------------------
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+// 1.0 imports
+// -----------------------------------------------------------------------------
+// defines any imported frameworks, .scss files, webfonts, etc.
+// -----------------------------------------------------------------------------
+@import url("//hello.myfonts.net/count/301a94");
+@font-face {
+	font-family: 'WorcesterSerial';
+	src: url('/wp-content/themes/slater-theme/webfonts/301A94_2_0.eot');
+	src: url('/wp-content/themes/slater-theme/webfonts/301A94_2_0.eot?#iefix') format('embedded-opentype'),url('/wp-content/themes/slater-theme/webfonts/301A94_2_0.woff2') format('woff2'),url('/wp-content/themes/slater-theme/webfonts/301A94_2_0.woff') format('woff'),url('/wp-content/themes/slater-theme/webfonts/301A94_2_0.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'WorcesterSerial-Italic';
+	src: url('/wp-content/themes/slater-theme/webfonts/301A94_0_0.eot');
+	src: url('/wp-content/themes/slater-theme/webfonts/301A94_0_0.eot?#iefix') format('embedded-opentype'),url('/wp-content/themes/slater-theme/webfonts/301A94_0_0.woff2') format('woff2'),url('/wp-content/themes/slater-theme/webfonts/301A94_0_0.woff') format('woff'),url('/wp-content/themes/slater-theme/webfonts/301A94_0_0.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'WorcesterSerial-Medium';
+	src: url('/wp-content/themes/slater-theme/webfonts/301A94_1_0.eot');
+	src: url('/wp-content/themes/slater-theme/webfonts/301A94_1_0.eot?#iefix') format('embedded-opentype'),url('/wp-content/themes/slater-theme/webfonts/301A94_1_0.woff2') format('woff2'),url('/wp-content/themes/slater-theme/webfonts/301A94_1_0.woff') format('woff'),url('/wp-content/themes/slater-theme/webfonts/301A94_1_0.ttf') format('truetype');
+}
+ 
+// 2.0 variables
+// -----------------------------------------------------------------------------
+// all variables used in this file
+// -----------------------------------------------------------------------------
+
+// 2.1 colors
+// UCD brand colors, based on hex values at http://marketingtoolbox.ucdavis.edu/identity/color.html
+$color__ucd-blue: #002855;
+$color__ucd-blue--90: #1A3E68;
+$color__ucd-blue--80: #335379;
+$color__ucd-blue--70: #4D688C;
+$color__ucd-blue--60: #667D9D;
+$color__ucd-blue--50: #7F93AE;
+$color__ucd-blue--40: #99A9BF;
+$color__ucd-blue--30: #B2BDCF;
+$color__ucd-blue--20: #CCD4E0;
+$color__ucd-blue--10: #E5E9EF;
+$color__ucd-gold: #C99700;
+$color__ucd-gold--90: #CFA21A;
+$color__ucd-gold--80: #D4AC33;
+$color__ucd-gold--70: #D9B64C;
+$color__ucd-gold--60: #DFC166;
+$color__ucd-gold--50: #E4CB7F;
+$color__ucd-gold--40: #E9D599;
+$color__ucd-gold--30: #EFE0B2;
+$color__ucd-gold--20: #F4EACC;
+$color__ucd-gold--10: #F9F4E5;
+
+// Site-specific color palette
+$color__body-text: #000000;
+$color__link: $color__ucd-blue;
+
+// 3.0 typography
+// -----------------------------------------------------------------------------
+// all typographic rules, including colors, text-transforms, and bottom margins
+// -----------------------------------------------------------------------------
+body { 
+	font-family: WorcesterSerial-Medium;
+}
+
+h1 {
+	font-family: WorcesterSerial;
+	font-size: 2.2em;
+	line-height: 1.2em;
+	color: $color__ucd-blue;
+	margin-bottom: 1em;
+}
+
+h2 {
+	font-family: WorcesterSerial;
+	font-size: 1.8em;
+	line-height: 1.2em;
+	color: $color__ucd-blue;
+	margin-bottom: 1em;
+}
+
+h3 {
+	font-family: WorcesterSerial;
+	font-size: 1.3em;
+	line-height: 1.4em;
+	margin-bottom: 1em;
+}
+
+p {
+	font-size: 1em;
+	line-height: 1.4em;
+	margin-bottom: 1em;
+	padding: 0;
+}
+
+em {
+	font-family: WorcesterSerial-Italic;
+}
+
+blockquote {
+	font-family: WorcesterSerial;
+	font-size: 1.3em;
+	line-height: 1.4em;
+	color: $color__ucd-blue;
+	text-indent: -.3em;
+	padding: 0px;
+	margin-bottom: 1em;
+	p {
+		margin: 0;
+		padding: 0;
+	}
+}
+
+#footer {
+	font-size: .8em;
+	line-height: 1.4em;
+	text-align: center;
+	margin: 5em;
+}
+
+
+
+// 4.0 layout
+// -----------------------------------------------------------------------------
+// all layout rules, including flexboxes, floats, position, overflow, z-index, widths,
+// heights, margins, padding, etc.
+// -----------------------------------------------------------------------------
+
+.menu-navigation-container {
+ul { list-style: none;}
+}
+
+.post {
+	max-width: 34em;
+	margin: auto;
+	padding: 1em;
+}
+
+// 5.0 imagery
+// -----------------------------------------------------------------------------
+// all background images, icons, etc.
+// -----------------------------------------------------------------------------
+
+#header {
+	background: url('/wp-content/themes/slater-theme/images/header.png');
+}
+
+// 6.0 general
+// -----------------------------------------------------------------------------
+// global styles that don't fit comfortably in any of the other categories
+// -----------------------------------------------------------------------------
+
+// 7.0 animation
+// -----------------------------------------------------------------------------
+// transitions, transforms, animations, etc.
+// -----------------------------------------------------------------------------
+
+// 8.0 modules
+// -----------------------------------------------------------------------------
+// module level styles that don't fit either of the categories above, including
+// background, borders, pseudo element content etc.
+// -----------------------------------------------------------------------------
+
+// 9.0 print
+// -----------------------------------------------------------------------------
+// styles for printing the site on dead-trees
+// -----------------------------------------------------------------------------
+
+@media print {
+	.do-not-print { 
+		display: none; 
+	}
+	#comments {
+		page-break-before: always; 
+	}
+	body {
+		width: 100% !important;
+		margin: 0 !important;
+		padding: 0 !important;
+		line-height: 1.4;
+		word-spacing: 1.1pt;
+		letter-spacing: 0.2pt;
+		font-family: Garamond,"Times New Roman", serif;
+		color: #000;
+		background: none;
+		font-size: 12pt; 
+	}
+	h1,h2,h3,h4,h5,h6 {
+		font-family: Helvetica, Arial, sans-serif; 
+	}
+	h1 {
+		font-size: 19pt; 
+	}
+	h2 {
+		font-size:17pt; 
+	}
+	h3 {
+		font-size:15pt; 
+	}
+	h4,h5,h6 {
+		font-size:12pt; 
+	}
+	code {
+		font: 10pt Courier, monospace; 
+	}
+	blockquote {
+		margin: 1.3em;
+		padding: 1em; 
+	}
+	img {
+		display: block;
+		margin: 1em 0; 
+	}
+	a img {
+		border: none; 
+	}
+	table {
+		margin: 1px;
+		text-align:left; 
+	}
+	th {
+		border-bottom: 1px solid #333;
+		font-weight: bold; 
+	}
+	td {
+		border-bottom: 1px solid #333; 
+	}
+	th, td {
+		padding: 4px 10px 4px 0; 
+	}
+	caption {
+		background: #fff;
+		margin-bottom: 2em;
+		text-align: left; 
+	}
+	thead {
+		display: table-header-group; 
+	}
+	tr {
+		page-break-inside: avoid; 
+	}
+	a {
+		text-decoration: none; color: black; 
+	}
+}
