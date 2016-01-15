@@ -10,7 +10,7 @@ Version: 1
 // --------------------------------------
 // 0.0 reset 
 // 1.0 imports
-// 2.0 variables
+// 2.0 variables and mixins
 // 3.0 typography
 // 4.0 layout
 // 5.0 imagery
@@ -90,7 +90,7 @@ table {
 	src: url('/wp-content/themes/slater-theme/webfonts/301A94_1_0.eot?#iefix') format('embedded-opentype'),url('/wp-content/themes/slater-theme/webfonts/301A94_1_0.woff2') format('woff2'),url('/wp-content/themes/slater-theme/webfonts/301A94_1_0.woff') format('woff'),url('/wp-content/themes/slater-theme/webfonts/301A94_1_0.ttf') format('truetype');
 }
  
-// 2.0 variables
+// 2.0 variables and mixins
 // -----------------------------------------------------------------------------
 // all variables used in this file
 // -----------------------------------------------------------------------------
@@ -120,12 +120,27 @@ $color__ucd-gold--10: #F9F4E5;
 
 // Site-specific color palette
 $color__body-text: #000000;
-$color__link: $color__ucd-blue;
+$color__link: $color__ucd-blue--80;
 
 // 2.2 font stacks
 $serif-body: WorcesterSerial-Medium, Georgia, serif;
 $serif-header: WorcesterSerial, Georgia, serif;
-$sans-serif: Helvetica, sans-serif;
+$sans-serif: "proxima-nova", "Lucida Grande", "Lucida Sans", "Verdana", sans-serif;
+
+//2.3 mixins
+@mixin bp-small {
+  @media only screen and (min-width: 46em) {
+    @content;
+  }
+}
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
 
 // 3.0 typography
 // -----------------------------------------------------------------------------
@@ -165,6 +180,13 @@ p {
 	padding: 0;
 }
 
+a {
+	color: $color__link;
+	&:hover {
+		color: $color__ucd-blue;
+	}
+}
+
 em {
 	font-family: WorcesterSerial-Italic;
 }
@@ -190,12 +212,36 @@ blockquote {
 	margin: 5em;
 }
 
-.menu-navigation-container {
+.menu-navigation-container, .menu-links {
 	font-family: $sans-serif;
-	font-size: .8em;
+	font-weight: 400;
+	font-size: 1.2em;
+	letter-spacing: .025em;
+	list-style: none;
+	a {
+		text-decoration: none;
+		text-transform: uppercase;
+		padding: .1em;
+		color: $color__link;
+		&:hover {
+			color: $color__ucd-blue;
+		}
+	}
+	li {
+		padding: 2em .6em 1em;
+	}
+	@include bp-small {
+		font-size: .8em;
+		li {
+			padding: 0em .6em 1em;
+		}
+	}
 }
 
-
+.menu-links {
+	text-align: center;
+	font-size: 1.2em;
+}
 
 // 4.0 layout
 // -----------------------------------------------------------------------------
@@ -203,14 +249,29 @@ blockquote {
 // heights, margins, padding, etc.
 // -----------------------------------------------------------------------------
 
-.menu-navigation-container {
-	ul { 
-		list-style: none;
-		display: flex;
-		justify-content: center;
-		li {
-			text-transform: uppercase;
-			padding: 1em;
+#header {
+	height: 140px;
+}
+
+.menu-links {
+	width: 100%;
+	@include bp-small {
+		display: none;
+	}
+}
+
+.menu-navigation-container{
+	//height: 600px;
+	width: 100%;
+	margin: 2em auto;
+	@include bp-small {
+		position: absolute;
+		top: 100px;
+		height: 40px;
+		margin-top: 0;
+		ul { 
+			display: flex;
+			justify-content: center;
 		}
 	}
 }
@@ -232,13 +293,29 @@ blockquote {
 
 // 6.0 general
 // -----------------------------------------------------------------------------
-// global styles that don't fit comfortably in any of the other categories
+// global styles that don't fit comfortably in any of the other categories. 
+// Borders, rounded corners, and other dectorations go here
 // -----------------------------------------------------------------------------
+
+.menu-navigation-container a, .menu-links a {
+	border-bottom: .2em solid $color__ucd-blue--40;
+	&:hover {
+		border-bottom: .2em solid $color__ucd-blue--70;
+	}
+}
 
 // 7.0 animation
 // -----------------------------------------------------------------------------
 // transitions, transforms, animations, etc.
 // -----------------------------------------------------------------------------
+
+a {
+	@include transition(color .3s ease);
+}
+
+.menu-navigation-container a, .menu-links a {
+	@include transition(border-bottom .3s ease);
+}
 
 // 8.0 modules
 // -----------------------------------------------------------------------------

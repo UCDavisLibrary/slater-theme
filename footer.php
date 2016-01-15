@@ -1,3 +1,5 @@
+<?php get_sidebar(); ?>
+<div class="menu-links"><a href="#page-wrap">Close</a></div>
 		<div id="footer">
 			&copy;<?php echo date("Y"); echo " "; bloginfo('name'); ?>
 		</div>

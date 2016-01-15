@@ -6,6 +6,7 @@
 <head profile="http://gmpg.org/xfn/11">
 	
 	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 	
 	<?php if (is_search()) { ?>
 	   <meta name="robots" content="noindex, nofollow" /> 
@@ -42,6 +43,8 @@
 
 	<?php wp_head(); ?>
 	
+	<script src="https://use.typekit.net/dsc2nbj.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
 </head>
 
 <body <?php body_class(); ?>>
@@ -50,7 +53,8 @@
 
 		<div id="header">
 			<h1><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h1>
-			<div class="description"><?php bloginfo('description'); ?></div>
-			<?php get_sidebar(); ?>
+			<div class="menu-links"><a href="#menu-navigation">Menu</a></div>
+			<!--div class="description"><?php bloginfo('description'); ?></div-->
+			
 		</div>
 
