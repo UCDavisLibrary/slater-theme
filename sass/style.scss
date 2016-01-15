@@ -119,11 +119,12 @@ $color__ucd-gold--20: #F4EACC;
 $color__ucd-gold--10: #F9F4E5;
 
 // Site-specific color palette
-$color__body-text: #000000;
+$color__body-text: #444444;
 $color__link: $color__ucd-blue--80;
 
 // 2.2 font stacks
 $serif-body: WorcesterSerial-Medium, Georgia, serif;
+$serif-body-lg: WorcesterSerial, Georgia, serif;
 $serif-header: WorcesterSerial, Georgia, serif;
 $sans-serif: "proxima-nova", "Lucida Grande", "Lucida Sans", "Verdana", sans-serif;
 
@@ -148,6 +149,7 @@ $sans-serif: "proxima-nova", "Lucida Grande", "Lucida Sans", "Verdana", sans-ser
 // -----------------------------------------------------------------------------
 body { 
 	font-family: $serif-body;
+	color: $color__body-text;
 }
 
 h1 {
@@ -205,6 +207,15 @@ blockquote {
 	}
 }
 
+#header {
+	text-align: center;
+	padding-top: 2em;
+	svg {
+		max-height: 7em;
+		fill: $color__ucd-blue;
+	}
+}
+
 #footer {
 	font-size: .8em;
 	line-height: 1.4em;
@@ -250,23 +261,29 @@ blockquote {
 // -----------------------------------------------------------------------------
 
 #header {
-	height: 140px;
+	width: 100%;
+	min-height: 18em;
 }
 
 .menu-links {
 	width: 100%;
+	margin-top: 3em;
 	@include bp-small {
 		display: none;
 	}
 }
 
+#top-menu-sm {
+	position: absolute;
+	top: 14.6em;
+}
+
 .menu-navigation-container{
-	//height: 600px;
 	width: 100%;
 	margin: 2em auto;
 	@include bp-small {
 		position: absolute;
-		top: 100px;
+		top: 335px;
 		height: 40px;
 		margin-top: 0;
 		ul { 
@@ -279,7 +296,7 @@ blockquote {
 .post {
 	max-width: 34em;
 	margin: auto;
-	padding: 1em;
+	padding: 5em 1em;
 }
 
 // 5.0 imagery
@@ -288,7 +305,9 @@ blockquote {
 // -----------------------------------------------------------------------------
 
 #header {
-	background: url('/wp-content/themes/slater-theme/images/header.png') cover;
+	background: url('/wp-content/themes/slater-theme/images/header.png') bottom center;
+	background-size: 75em;
+	background-repeat: no-repeat;
 }
 
 // 6.0 general
@@ -296,6 +315,10 @@ blockquote {
 // global styles that don't fit comfortably in any of the other categories. 
 // Borders, rounded corners, and other dectorations go here
 // -----------------------------------------------------------------------------
+
+#header {
+	border-bottom: .1em solid $color__ucd-blue--60;
+}
 
 .menu-navigation-container a, .menu-links a {
 	border-bottom: .2em solid $color__ucd-blue--40;

@@ -23,7 +23,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 @font-face { font-family: 'WorcesterSerial'; src: url("/wp-content/themes/slater-theme/webfonts/301A94_2_0.eot"); src: url("/wp-content/themes/slater-theme/webfonts/301A94_2_0.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/slater-theme/webfonts/301A94_2_0.woff2") format("woff2"), url("/wp-content/themes/slater-theme/webfonts/301A94_2_0.woff") format("woff"), url("/wp-content/themes/slater-theme/webfonts/301A94_2_0.ttf") format("truetype"); }
 @font-face { font-family: 'WorcesterSerial-Italic'; src: url("/wp-content/themes/slater-theme/webfonts/301A94_0_0.eot"); src: url("/wp-content/themes/slater-theme/webfonts/301A94_0_0.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/slater-theme/webfonts/301A94_0_0.woff2") format("woff2"), url("/wp-content/themes/slater-theme/webfonts/301A94_0_0.woff") format("woff"), url("/wp-content/themes/slater-theme/webfonts/301A94_0_0.ttf") format("truetype"); }
 @font-face { font-family: 'WorcesterSerial-Medium'; src: url("/wp-content/themes/slater-theme/webfonts/301A94_1_0.eot"); src: url("/wp-content/themes/slater-theme/webfonts/301A94_1_0.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/slater-theme/webfonts/301A94_1_0.woff2") format("woff2"), url("/wp-content/themes/slater-theme/webfonts/301A94_1_0.woff") format("woff"), url("/wp-content/themes/slater-theme/webfonts/301A94_1_0.ttf") format("truetype"); }
-body { font-family: WorcesterSerial-Medium, Georgia, serif; }
+body { font-family: WorcesterSerial-Medium, Georgia, serif; color: #444444; }
 
 h1 { font-family: WorcesterSerial, Georgia, serif; font-size: 2.2em; line-height: 1.2em; color: #002855; margin-bottom: 1em; }
 
@@ -41,6 +41,9 @@ em { font-family: WorcesterSerial-Italic; }
 blockquote { font-family: WorcesterSerial, Georgia, serif; font-size: 1.3em; line-height: 1.4em; color: #002855; text-indent: -.3em; padding: 0px; margin-bottom: 1em; }
 blockquote p { margin: 0; padding: 0; }
 
+#header { text-align: center; padding-top: 2em; }
+#header svg { max-height: 7em; fill: #002855; }
+
 #footer { font-size: .8em; line-height: 1.4em; text-align: center; margin: 5em; }
 
 .menu-navigation-container, .menu-links { font-family: "proxima-nova", "Lucida Grande", "Lucida Sans", "Verdana", sans-serif; font-weight: 400; font-size: 1.2em; letter-spacing: .025em; list-style: none; }
@@ -52,18 +55,22 @@ blockquote p { margin: 0; padding: 0; }
 
 .menu-links { text-align: center; font-size: 1.2em; }
 
-#header { height: 140px; }
+#header { width: 100%; min-height: 18em; }
 
-.menu-links { width: 100%; }
+.menu-links { width: 100%; margin-top: 3em; }
 @media only screen and (min-width: 46em) { .menu-links { display: none; } }
 
+#top-menu-sm { position: absolute; top: 14.6em; }
+
 .menu-navigation-container { width: 100%; margin: 2em auto; }
-@media only screen and (min-width: 46em) { .menu-navigation-container { position: absolute; top: 100px; height: 40px; margin-top: 0; }
+@media only screen and (min-width: 46em) { .menu-navigation-container { position: absolute; top: 335px; height: 40px; margin-top: 0; }
   .menu-navigation-container ul { display: flex; justify-content: center; } }
 
-.post { max-width: 34em; margin: auto; padding: 1em; }
+.post { max-width: 34em; margin: auto; padding: 5em 1em; }
 
-#header { background: url("/wp-content/themes/slater-theme/images/header.png") cover; }
+#header { background: url("/wp-content/themes/slater-theme/images/header.png") bottom center; background-size: 75em; background-repeat: no-repeat; }
+
+#header { border-bottom: 0.1em solid #667D9D; }
 
 .menu-navigation-container a, .menu-links a { border-bottom: 0.2em solid #99A9BF; }
 .menu-navigation-container a:hover, .menu-links a:hover { border-bottom: 0.2em solid #4D688C; }
