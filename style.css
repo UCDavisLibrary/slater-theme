@@ -26,12 +26,16 @@ table { border-collapse: collapse; border-spacing: 0; }
 body { font-family: WorcesterSerial-Medium, Georgia, serif; color: #444444; }
 
 h1 { font-family: WorcesterSerial, Georgia, serif; font-size: 2.2em; line-height: 1.2em; color: #002855; margin-bottom: 1em; }
+@media only screen and (min-width: 46em) { h1 { font-size: 2.4em; } }
 
 h2 { font-family: WorcesterSerial, Georgia, serif; font-size: 1.8em; line-height: 1.2em; color: #002855; margin-bottom: 1em; }
+@media only screen and (min-width: 46em) { h2 { font-size: 2em; } }
 
 h3 { font-family: WorcesterSerial, Georgia, serif; font-size: 1.3em; line-height: 1.4em; margin-bottom: 1em; }
+@media only screen and (min-width: 46em) { h3 { font-size: 1.5em; } }
 
 p { font-size: 1em; line-height: 1.4em; margin-bottom: 1em; padding: 0; }
+@media only screen and (min-width: 46em) { p { font-size: 1.2em; } }
 
 a { color: #335379; }
 a:hover { color: #002855; }
@@ -67,6 +71,7 @@ blockquote p { margin: 0; padding: 0; }
   .menu-navigation-container ul { display: flex; justify-content: center; } }
 
 .post { max-width: 34em; margin: auto; padding: 5em 1em; }
+@media only screen and (min-width: 46em) { .post { max-width: 38em; } }
 
 #header { background: url("/wp-content/themes/slater-theme/images/header.png") bottom center; background-size: 75em; background-repeat: no-repeat; }
 
