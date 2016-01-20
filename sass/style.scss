@@ -293,11 +293,13 @@ blockquote {
 .menu-navigation-container{
 	width: 100%;
 	margin: 2em auto;
+	background-color: white;
 	@include bp-small {
 		position: absolute;
-		top: 335px;
+		top: 320px;
 		height: 40px;
 		margin-top: 0;
+		padding-top: 20px;
 		ul { 
 			display: flex;
 			justify-content: center;
@@ -331,8 +333,8 @@ blockquote {
 // Borders, rounded corners, and other dectorations go here
 // -----------------------------------------------------------------------------
 
-#header {
-	border-bottom: .1em solid $color__ucd-blue--60;
+.menu-navigation-container {
+	border-top: .2em solid $color__ucd-blue--60;
 }
 
 .menu-navigation-container a, .menu-links a {
