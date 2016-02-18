@@ -50,35 +50,71 @@ blockquote p { margin: 0; padding: 0; }
 
 #footer { font-size: .8em; line-height: 1.4em; text-align: center; margin: 5em; }
 
-.menu-navigation-container, .menu-links { font-family: "proxima-nova", "Lucida Grande", "Lucida Sans", "Verdana", sans-serif; font-weight: 400; font-size: 1.2em; letter-spacing: .025em; list-style: none; }
+.menu-navigation-container, .menu-links { font-family: "proxima-nova", "Lucida Grande", "Lucida Sans", "Verdana", sans-serif; font-weight: 400; font-size: 1em; letter-spacing: .025em; list-style: none; }
 .menu-navigation-container a, .menu-links a { text-decoration: none; text-transform: uppercase; padding: .1em; color: #335379; }
 .menu-navigation-container a:hover, .menu-links a:hover { color: #002855; }
 .menu-navigation-container li, .menu-links li { padding: 2em .6em 1em; }
 @media only screen and (min-width: 46em) { .menu-navigation-container, .menu-links { font-size: .8em; }
-  .menu-navigation-container li, .menu-links li { padding: 0em .6em 1em; } }
+  .menu-navigation-container li, .menu-links li { padding: 0em .3em 1em; } }
 
 .menu-links { text-align: center; font-size: 1.2em; }
 
-#header { width: 100%; min-height: 18em; }
+.wp-caption-text { font-size: .8em; color: #4D688C; }
 
-.menu-links { width: 100%; margin-top: 3em; }
+.home h1 { font-size: 1.2em; text-align: center; max-width: 25em; }
+@media only screen and (min-width: 46em) { .home h1 { font-size: 1.8em; } }
+
+.featured-boxes label { font-family: "proxima-nova", "Lucida Grande", "Lucida Sans", "Verdana", sans-serif; font-size: .8em; line-height: 1em; text-transform: uppercase; }
+.featured-boxes h2 { font-size: 1em; }
+
+#header { width: 100%; padding-bottom: 1em; }
+
+.menu-links { width: 100%; margin-top: 0em; }
 @media only screen and (min-width: 46em) { .menu-links { display: none; } }
 
-#top-menu-sm { position: absolute; top: 14.6em; }
+#top-menu-sm { position: absolute; top: 8.7em; }
 
 .menu-navigation-container { width: 100%; margin: 2em auto; background-color: white; }
-@media only screen and (min-width: 46em) { .menu-navigation-container { position: absolute; top: 320px; height: 40px; margin-top: 0; padding-top: 20px; }
+@media only screen and (min-width: 46em) { .menu-navigation-container { position: absolute; top: 170px; height: 40px; margin-top: 0; padding-top: 20px; }
   .menu-navigation-container ul { display: flex; justify-content: center; } }
+
+.home #sidebar { position: relative; }
+.home .site-content { margin-top: 0em; }
+@media only screen and (min-width: 46em) { .home .site-content { margin-top: 0; } }
+.home .menu-navigation-container { position: static; margin-top: 3em; }
+.home h1 { margin: 3em auto 0em; padding: 0 .5em 0; }
+@media only screen and (min-width: 46em) { .home h1 { margin-top: .5em; padding: 0; } }
+.home-header { min-height: 18em; }
+
+.featured-boxes { max-width: 60em; margin: 0 auto; }
+@media only screen and (min-width: 46em) { .featured-boxes { display: flex; justify-content: space-around; flex-wrap: wrap; padding-top: 1em; } }
+.featured-boxes label { display: block; padding-bottom: .4em; }
+.featured-boxes .featured-item { height: 12em; display: flex; align-items: flex-end; margin: 2%; }
+@media only screen and (min-width: 46em) { .featured-boxes .featured-item { width: 30%; margin: 0 0 2% 0; } }
+.featured-boxes .featured-item h2 { background: rgba(0, 40, 85, 0.8); color: white; margin: 0; min-height: 4em; width: 100%; padding: .5em .6em; }
 
 .post { max-width: 34em; margin: auto; padding: 5em 1em; }
 @media only screen and (min-width: 46em) { .post { max-width: 38em; } }
 
-#header { background: url("/wp-content/themes/slater-theme/images/header.png") bottom center; background-size: 75em; background-repeat: no-repeat; }
+.home-header { background: url("/wp-content/themes/slater-theme/images/header.png") bottom center; background-size: 75em; background-repeat: no-repeat; }
 
-.menu-navigation-container { border-top: 0.2em solid #667D9D; }
+#featurebox-one { background-image: url("https://slater.lib.ucdavis.edu/wp-content/uploads/2016/01/Team1920.jpg"); background-size: cover; background-position: bottom; }
+#featurebox-two { background-image: url("https://slater.lib.ucdavis.edu/wp-content/uploads/2016/01/d394_7_007_web.jpg"); background-size: cover; background-position: bottom; }
+#featurebox-three { background-image: url("https://slater.lib.ucdavis.edu/wp-content/uploads/2016/01/babe.jpg"); background-size: cover; background-position: center; }
+#featurebox-four { background-image: url("https://slater.lib.ucdavis.edu/wp-content/uploads/2016/01/womens-from-usa-rugby-site.jpg"); background-size: cover; }
+#featurebox-five { background-image: url("#"); background-size: cover; }
+#featurebox-six { background-image: url("#"); background-size: cover; }
 
-.menu-navigation-container a, .menu-links a { border-bottom: 0.2em solid #99A9BF; }
-.menu-navigation-container a:hover, .menu-links a:hover { border-bottom: 0.2em solid #4D688C; }
+body { background: white; }
+
+@media only screen and (min-width: 46em) { .home .site-content { border-top: 0.2em solid #667D9D; } }
+.home a { text-decoration: none; }
+
+.featured-item { background: #CCD4E0; border: 0.1em solid #667D9D; -webkit-transition: border 0.3s ease; -moz-transition: border 0.3s ease; -ms-transition: border 0.3s ease; -o-transition: border 0.3s ease; transition: border 0.3s ease; }
+.featured-item:hover { border: 0.1em solid #002855; }
+
+.menu-navigation-container a, .menu-links a { border-bottom: 0.2em solid #CCD4E0; -webkit-transition: border 0.3s ease; -moz-transition: border 0.3s ease; -ms-transition: border 0.3s ease; -o-transition: border 0.3s ease; transition: border 0.3s ease; }
+.menu-navigation-container a:hover, .menu-links a:hover { border-bottom: 0.2em solid #002855; }
 
 a { -webkit-transition: color 0.3s ease; -moz-transition: color 0.3s ease; -ms-transition: color 0.3s ease; -o-transition: color 0.3s ease; transition: color 0.3s ease; }
 

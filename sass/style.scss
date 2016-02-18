@@ -121,6 +121,7 @@ $color__ucd-gold--10: #F9F4E5;
 // Site-specific color palette
 $color__body-text: #444444;
 $color__link: $color__ucd-blue--80;
+$color__background: white; //#FBF6E5
 
 // 2.2 font stacks
 $serif-body: WorcesterSerial-Medium, Georgia, serif;
@@ -238,7 +239,7 @@ blockquote {
 .menu-navigation-container, .menu-links {
 	font-family: $sans-serif;
 	font-weight: 400;
-	font-size: 1.2em;
+	font-size: 1em;
 	letter-spacing: .025em;
 	list-style: none;
 	a {
@@ -256,7 +257,7 @@ blockquote {
 	@include bp-small {
 		font-size: .8em;
 		li {
-			padding: 0em .6em 1em;
+			padding: 0em .3em 1em;
 		}
 	}
 }
@@ -264,6 +265,33 @@ blockquote {
 .menu-links {
 	text-align: center;
 	font-size: 1.2em;
+}
+
+.wp-caption-text {
+	font-size: .8em;
+	color: $color__ucd-blue--70;
+}
+
+.home {
+	h1 {
+		font-size: 1.2em;
+		text-align: center;
+		max-width: 25em;
+		@include bp-small {
+			font-size: 1.8em;
+		}
+	}
+}
+.featured-boxes {
+	label {
+		font-family: $sans-serif;
+		font-size: .8em;
+		line-height: 1em;
+		text-transform: uppercase;
+	}
+	h2 {
+		font-size: 1em;
+	}
 }
 
 // 4.0 layout
@@ -274,12 +302,13 @@ blockquote {
 
 #header {
 	width: 100%;
-	min-height: 18em;
+	padding-bottom: 1em;
+	//min-height: 18em;
 }
 
 .menu-links {
 	width: 100%;
-	margin-top: 3em;
+	margin-top: 0em;
 	@include bp-small {
 		display: none;
 	}
@@ -287,22 +316,84 @@ blockquote {
 
 #top-menu-sm {
 	position: absolute;
-	top: 14.6em;
+	top: 8.7em;
 }
 
-.menu-navigation-container{
+.menu-navigation-container {
 	width: 100%;
 	margin: 2em auto;
-	background-color: white;
+	background-color: $color__background;
 	@include bp-small {
 		position: absolute;
-		top: 320px;
+		top: 170px;
 		height: 40px;
 		margin-top: 0;
 		padding-top: 20px;
 		ul { 
 			display: flex;
 			justify-content: center;
+		}
+	}
+}
+
+.home {
+	#sidebar {
+			position: relative;
+			//bottom: 0px;
+			//height: 40px;
+	}
+	.site-content {
+		margin-top: 0em;
+		@include bp-small {
+			margin-top: 0;
+		}
+	}
+	.menu-navigation-container {
+		position: static;
+		margin-top: 3em;
+	}
+	h1 {
+		margin: 3em auto 0em;
+		padding: 0 .5em 0;
+		@include bp-small {
+			margin-top: .5em;
+			padding: 0;
+		}
+	}
+	&-header {
+		min-height: 18em;
+	}
+}
+
+.featured-boxes {
+	max-width: 60em;
+	margin: 0 auto;
+	@include bp-small {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		padding-top: 1em;
+	}
+	label {
+		display: block;
+		padding-bottom: .4em;
+	}
+	.featured-item {
+		height: 12em;
+		display: flex;
+		align-items: flex-end;
+		margin: 2%;
+		@include bp-small {
+			width: 30%;
+			margin: 0 0 2% 0;
+		}
+		h2 {
+			background: rgba(0, 40, 85, 0.8);
+			color: white;
+			margin: 0;
+			min-height: 4em;
+			width: 100%;
+			padding: .5em .6em;
 		}
 	}
 }
@@ -321,10 +412,40 @@ blockquote {
 // all background images, icons, etc.
 // -----------------------------------------------------------------------------
 
-#header {
+.home-header {
 	background: url('/wp-content/themes/slater-theme/images/header.png') bottom center;
 	background-size: 75em;
 	background-repeat: no-repeat;
+}
+
+#featurebox- {
+	&one {
+		background-image: url('https://slater.lib.ucdavis.edu/wp-content/uploads/2016/01/Team1920.jpg');
+		background-size: cover;
+		background-position: bottom;	
+	}
+	&two {
+		background-image: url('https://slater.lib.ucdavis.edu/wp-content/uploads/2016/01/d394_7_007_web.jpg');
+		background-size: cover;
+		background-position: bottom;
+	}
+	&three {
+		background-image: url('https://slater.lib.ucdavis.edu/wp-content/uploads/2016/01/babe.jpg');
+		background-size: cover;
+		background-position: center;
+	}
+	&four {
+		background-image: url('https://slater.lib.ucdavis.edu/wp-content/uploads/2016/01/womens-from-usa-rugby-site.jpg');
+		background-size: cover;
+	}
+	&five {
+		background-image: url('#');
+		background-size: cover;
+	}
+	&six {
+		background-image: url('#');
+		background-size: cover;
+	}
 }
 
 // 6.0 general
@@ -333,14 +454,39 @@ blockquote {
 // Borders, rounded corners, and other dectorations go here
 // -----------------------------------------------------------------------------
 
+body {
+	background: $color__background;
+}
+
 .menu-navigation-container {
-	border-top: .2em solid $color__ucd-blue--60;
+	//border-top: .2em solid $color__ucd-blue--60;
+}
+
+.home {
+	.site-content {
+		@include bp-small {
+			border-top: .2em solid $color__ucd-blue--60;
+		}
+	}
+	a {
+		text-decoration: none;
+	}
+}
+
+.featured-item {
+	background: $color__ucd-blue--20;
+	border: .1em solid $color__ucd-blue--60;
+	@include transition(border .3s ease);
+	&:hover {
+		border: .1em solid $color__ucd-blue;
+	}
 }
 
 .menu-navigation-container a, .menu-links a {
-	border-bottom: .2em solid $color__ucd-blue--40;
+	border-bottom: .2em solid $color__ucd-blue--20;
+	@include transition(border .3s ease);
 	&:hover {
-		border-bottom: .2em solid $color__ucd-blue--70;
+		border-bottom: .2em solid $color__ucd-blue;
 	}
 }
 
