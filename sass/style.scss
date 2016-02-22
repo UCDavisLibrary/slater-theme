@@ -229,11 +229,14 @@ blockquote {
 	}
 }
 
-#footer {
-	font-size: .8em;
+#footer, .footer {
+	font-family: $sans-serif;
 	line-height: 1.4em;
 	text-align: center;
-	margin: 5em;
+	margin: 1em;
+	p {
+		font-size: .8em;
+	}
 }
 
 .menu-navigation-container, .menu-links {
@@ -257,7 +260,7 @@ blockquote {
 	@include bp-small {
 		font-size: .8em;
 		li {
-			padding: 0em .3em 1em;
+			padding: 0em 1em 1em;
 		}
 	}
 }
@@ -332,6 +335,7 @@ blockquote {
 		ul { 
 			display: flex;
 			justify-content: center;
+			flex-wrap: wrap;
 		}
 	}
 }
@@ -404,6 +408,20 @@ blockquote {
 	padding: 5em 1em;
 	@include bp-small {
 		max-width: 38em;
+	}
+}
+
+.footer {
+	margin-top: 5em;
+	padding-top: 2em;
+	ul {
+		@include bp-small {
+			display: flex;
+			justify-content: center;
+		}
+		li {
+			padding: .5em;
+		}
 	}
 }
 
@@ -488,6 +506,10 @@ body {
 	&:hover {
 		border-bottom: .2em solid $color__ucd-blue;
 	}
+}
+
+.footer {
+	border-top: .1em solid $color__ucd-blue--60;
 }
 
 // 7.0 animation
