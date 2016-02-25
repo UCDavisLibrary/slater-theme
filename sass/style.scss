@@ -1,4 +1,4 @@
-/*   
+/*
 Theme Name: Slater Archive Theme
 Author: Pablo Defendini for UC Davis
 Author URI: http://defendini.com
@@ -8,7 +8,7 @@ Version: 1
 // -----------------------------------------------------------------------------
 // Table of contents
 // --------------------------------------
-// 0.0 reset 
+// 0.0 reset
 // 1.0 imports
 // 2.0 variables and mixins
 // 3.0 typography
@@ -34,8 +34,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -46,7 +46,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -89,7 +89,7 @@ table {
 	src: url('/wp-content/themes/slater-theme/webfonts/301A94_1_0.eot');
 	src: url('/wp-content/themes/slater-theme/webfonts/301A94_1_0.eot?#iefix') format('embedded-opentype'),url('/wp-content/themes/slater-theme/webfonts/301A94_1_0.woff2') format('woff2'),url('/wp-content/themes/slater-theme/webfonts/301A94_1_0.woff') format('woff'),url('/wp-content/themes/slater-theme/webfonts/301A94_1_0.ttf') format('truetype');
 }
- 
+
 // 2.0 variables and mixins
 // -----------------------------------------------------------------------------
 // all variables used in this file
@@ -148,7 +148,7 @@ $sans-serif: "proxima-nova", "Lucida Grande", "Lucida Sans", "Verdana", sans-ser
 // -----------------------------------------------------------------------------
 // all typographic rules, including colors, text-transforms, and bottom margins
 // -----------------------------------------------------------------------------
-body { 
+body {
 	font-family: $serif-body;
 	color: $color__body-text;
 }
@@ -332,7 +332,7 @@ blockquote {
 		height: 40px;
 		margin-top: 0;
 		padding-top: 20px;
-		ul { 
+		ul {
 			display: flex;
 			justify-content: center;
 			flex-wrap: wrap;
@@ -440,7 +440,7 @@ blockquote {
 	&one {
 		background-image: url('https://slater.lib.ucdavis.edu/wp-content/uploads/2016/01/Team1920.jpg');
 		background-size: cover;
-		background-position: bottom;	
+		background-position: bottom;
 	}
 	&two {
 		background-image: url('https://slater.lib.ucdavis.edu/wp-content/uploads/2016/01/d394_7_007_web.jpg');
@@ -457,18 +457,18 @@ blockquote {
 		background-size: cover;
 	}
 	&five {
-		background-image: url('#');
+		background-image: url('https://slater.lib.ucdavis.edu/wp-content/uploads/2016/01/UCD_rugby-1-640x386.jpg');
 		background-size: cover;
 	}
 	&six {
-		background-image: url('#');
+		background-image: url('https://slater.lib.ucdavis.edu/wp-content/uploads/2016/02/youth-rugby-640x337.jpg');
 		background-size: cover;
 	}
 }
 
 // 6.0 general
 // -----------------------------------------------------------------------------
-// global styles that don't fit comfortably in any of the other categories. 
+// global styles that don't fit comfortably in any of the other categories.
 // Borders, rounded corners, and other dectorations go here
 // -----------------------------------------------------------------------------
 
@@ -537,11 +537,11 @@ a {
 // -----------------------------------------------------------------------------
 
 @media print {
-	.do-not-print { 
-		display: none; 
+	.do-not-print {
+		display: none;
 	}
 	#comments {
-		page-break-before: always; 
+		page-break-before: always;
 	}
 	body {
 		width: 100% !important;
@@ -553,63 +553,63 @@ a {
 		font-family: Garamond,"Times New Roman", serif;
 		color: #000;
 		background: none;
-		font-size: 12pt; 
+		font-size: 12pt;
 	}
 	h1,h2,h3,h4,h5,h6 {
-		font-family: Helvetica, Arial, sans-serif; 
+		font-family: Helvetica, Arial, sans-serif;
 	}
 	h1 {
-		font-size: 19pt; 
+		font-size: 19pt;
 	}
 	h2 {
-		font-size:17pt; 
+		font-size:17pt;
 	}
 	h3 {
-		font-size:15pt; 
+		font-size:15pt;
 	}
 	h4,h5,h6 {
-		font-size:12pt; 
+		font-size:12pt;
 	}
 	code {
-		font: 10pt Courier, monospace; 
+		font: 10pt Courier, monospace;
 	}
 	blockquote {
 		margin: 1.3em;
-		padding: 1em; 
+		padding: 1em;
 	}
 	img {
 		display: block;
-		margin: 1em 0; 
+		margin: 1em 0;
 	}
 	a img {
-		border: none; 
+		border: none;
 	}
 	table {
 		margin: 1px;
-		text-align:left; 
+		text-align:left;
 	}
 	th {
 		border-bottom: 1px solid #333;
-		font-weight: bold; 
+		font-weight: bold;
 	}
 	td {
-		border-bottom: 1px solid #333; 
+		border-bottom: 1px solid #333;
 	}
 	th, td {
-		padding: 4px 10px 4px 0; 
+		padding: 4px 10px 4px 0;
 	}
 	caption {
 		background: #fff;
 		margin-bottom: 2em;
-		text-align: left; 
+		text-align: left;
 	}
 	thead {
-		display: table-header-group; 
+		display: table-header-group;
 	}
 	tr {
-		page-break-inside: avoid; 
+		page-break-inside: avoid;
 	}
 	a {
-		text-decoration: none; color: black; 
+		text-decoration: none; color: black;
 	}
 }
