@@ -99,13 +99,14 @@ blockquote p { margin: 0; padding: 0; }
 
 .footer { margin-top: 5em; padding-top: 2em; }
 @media only screen and (min-width: 46em) { .footer ul { display: flex; justify-content: center; } }
+.footer ul:first-of-type { align-items: center; }
 .footer ul li { padding: .5em; }
 
 .home-header { background: url("/wp-content/themes/slater-theme/images/header.png") bottom center; background-size: 75em; background-repeat: no-repeat; }
 
 #featurebox-one { background-image: url("https://slater.lib.ucdavis.edu/wp-content/uploads/2016/01/Team1920.jpg"); background-size: cover; background-position: bottom; }
 #featurebox-two { background-image: url("https://slater.lib.ucdavis.edu/wp-content/uploads/2016/01/d394_7_007_web.jpg"); background-size: cover; background-position: bottom; }
-#featurebox-three { background-image: url("https://slater.lib.ucdavis.edu/wp-content/uploads/2016/01/babe.jpg"); background-size: cover; background-position: center; }
+#featurebox-three { background-image: url("https://slater.lib.ucdavis.edu/wp-content/uploads/2016/02/LouiseandSons.jpeg"); background-size: cover; background-position: top; }
 #featurebox-four { background-image: url("https://slater.lib.ucdavis.edu/wp-content/uploads/2016/01/womens-from-usa-rugby-site.jpg"); background-size: cover; }
 #featurebox-five { background-image: url("https://slater.lib.ucdavis.edu/wp-content/uploads/2016/01/UCD_rugby-1-640x386.jpg"); background-size: cover; }
 #featurebox-six { background-image: url("https://slater.lib.ucdavis.edu/wp-content/uploads/2016/02/youth-rugby-640x337.jpg"); background-size: cover; }

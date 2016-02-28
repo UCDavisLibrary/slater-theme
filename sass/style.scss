@@ -419,6 +419,9 @@ blockquote {
 			display: flex;
 			justify-content: center;
 		}
+		&:first-of-type {
+			align-items: center;
+		}
 		li {
 			padding: .5em;
 		}
@@ -448,9 +451,9 @@ blockquote {
 		background-position: bottom;
 	}
 	&three {
-		background-image: url('https://slater.lib.ucdavis.edu/wp-content/uploads/2016/01/babe.jpg');
+		background-image: url('https://slater.lib.ucdavis.edu/wp-content/uploads/2016/02/LouiseandSons.jpeg');
 		background-size: cover;
-		background-position: center;
+		background-position: top;
 	}
 	&four {
 		background-image: url('https://slater.lib.ucdavis.edu/wp-content/uploads/2016/01/womens-from-usa-rugby-site.jpg');

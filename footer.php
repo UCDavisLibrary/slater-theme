@@ -3,12 +3,11 @@
 
 	<div class="footer">
 		<ul>
-			<li><a href="https://ucdavis.edu/"><img src="/wp-content/themes/slater-theme/images/uc-logo-blue.svg" class="logo " alt="UC Davis Logo" /></a></li>
-			<li><a href="https://www.lib.ucdavis.edu">The Peter J. Sheilds Library</a></li>
+			<li><a href="https://www.lib.ucdavis.edu/"><img src="/wp-content/themes/slater-theme/images/uc-lib-logo-blue.svg" class="logo " alt="UC Davis Logo" /></a></li>
 			<li><a href="https://www.lib.ucdavis.edu/dept/specol/">Special Collections</a></li>
 			<li><a href="https://give.ucdavis.edu/ulib/">Support the Library</a></li>
 		</ul>
-		<p>University of California, Davis, One Shields Avenue, Davis, CA 95616 | 530-752-1011</p>
+		<p>University of California, Davis, One Shields Avenue, Davis, CA 95616 | 530-752‑9862</p>
 		<ul>
 			<li><a href="https://www.ucdavis.edu/help">Help</a></li>
 			<li><a href="https://www.ucdavis.edu/contact">Questions or comments?</a></li>
@@ -22,9 +21,7 @@
 </div>
 
 <?php wp_footer(); ?>
-	
-	<!-- Don't forget analytics -->
-	
+
 </body>
 
 </html>
