@@ -428,6 +428,11 @@ blockquote {
 	}
 }
 
+.size-full, .size-large {
+	max-width: 34em;
+	height: auto;
+}
+
 // 5.0 imagery
 // -----------------------------------------------------------------------------
 // all background images, icons, etc.

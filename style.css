@@ -102,6 +102,8 @@ blockquote p { margin: 0; padding: 0; }
 .footer ul:first-of-type { align-items: center; }
 .footer ul li { padding: .5em; }
 
+.size-full, .size-large { max-width: 34em; height: auto; }
+
 .home-header { background: url("/wp-content/themes/slater-theme/images/header.png") bottom center; background-size: 75em; background-repeat: no-repeat; }
 
 #featurebox-one { background-image: url("https://slater.lib.ucdavis.edu/wp-content/uploads/2016/01/Team1920.jpg"); background-size: cover; background-position: bottom; }
