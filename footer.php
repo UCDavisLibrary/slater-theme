@@ -7,7 +7,7 @@
 			<li><a href="https://www.lib.ucdavis.edu/dept/specol/">Special Collections</a></li>
 			<li><a href="https://give.ucdavis.edu/ulib/">Support the Library</a></li>
 		</ul>
-		<p>University of California, Davis, One Shields Avenue, Davis, CA 95616 | 530-752‑9862</p>
+		<p>Peter J. Shields Library, 100 W Quad Ave, Davis, CA 95616 | 530-752‑1621</p>
 		<ul>
 			<li><a href="https://www.ucdavis.edu/help">Help</a></li>
 			<li><a href="https://www.ucdavis.edu/contact">Questions or comments?</a></li>
