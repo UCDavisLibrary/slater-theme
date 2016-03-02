@@ -9,8 +9,8 @@
 		</ul>
 		<p>Peter J. Shields Library, 100 W Quad Ave, Davis, CA 95616 | 530-752‑1621</p>
 		<ul>
-			<li><a href="https://www.ucdavis.edu/help">Help</a></li>
-			<li><a href="https://www.ucdavis.edu/contact">Questions or comments?</a></li>
+			<li><a href="https://www.lib.ucdavis.edu/ul/forms/comments/">Help</a></li>
+			<li><a href="https://www.lib.ucdavis.edu/ul/forms/comments/">Questions or comments?</a></li>
 			<li><a href="https://www.ucdavis.edu/privacy-and-accessibility">Privacy & Accessibility</a></li>
 			<li><a href="http://occr.ucdavis.edu/poc/">Principles of Community</a></li>
 			<li><a href="http://www.universityofcalifornia.edu/">University of California</a></li>
