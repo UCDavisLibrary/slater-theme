@@ -7,7 +7,7 @@
 			<li><a href="https://www.lib.ucdavis.edu/dept/specol/">Special Collections</a></li>
 			<li><a href="https://give.ucdavis.edu/ulib/">Support the Library</a></li>
 		</ul>
-		<p>Peter J. Shields Library, 100 W Quad Ave, Davis, CA 95616 | 530-752‑1621</p>
+		<p>Peter J. Shields Library, 100 NW Quad Ave, Davis, CA 95616 | 530-752-1621</p>
 		<ul>
 			<li><a href="https://www.lib.ucdavis.edu/ul/forms/comments/">Help</a></li>
 			<li><a href="https://www.lib.ucdavis.edu/ul/forms/comments/">Questions or comments?</a></li>
