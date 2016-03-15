@@ -1,12 +1,12 @@
 <?php get_header(); ?>
 	<div class="home-header">
-		<h1><a href="https://slater.lib.ucdavis.edu/index.php/colby-babe-slater/">In 1924, UC Davis alum Colby &ldquo;Babe&rdquo; Slater led the U.S. Olympic Rugby team to a gold medal in what would be the last Olympic rugby game for 92 years.</a></h1>
+		<h1><a href="https://slater.lib.ucdavis.edu/index.php/colby-babe-slater/">In 1924, UC Davis alum Colby E. &ldquo;Babe&rdquo; Slater led the U.S. Olympic Rugby team to a gold medal in what would be the last Olympic rugby game for 92 years.</a></h1>
 	</div>
 	<div id="primary" class="site-content">
 		<div id="content" role="main">
 			 <div class="featured-boxes">
 				 <a href="https://slater.lib.ucdavis.edu/index.php/colby-babe-slater/" id="featurebox-three" class="featured-item">
- 					<h2><label>Colby "Babe" Slater</label>
+ 					<h2><label>Colby E. &ldquo;Babe&rdquo; Slater</label>
  					Veteran. Captain. Aggie.</h2>
  				</a>
 				<a href="https://slater.lib.ucdavis.edu/index.php/1920-olympics/" id="featurebox-one" class="featured-item">
